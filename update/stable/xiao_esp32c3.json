@@ -1,11 +1,11 @@
 {
  "fw_id": "xiao_esp32c3",
- "version": "1.14.0",
- "size": 1660016,
- "sha256": "31b6ec5ebe420f6bd099752f29aa43f4eedad29dd754b3b5f5b43b547a0b5267",
- "sig": "30460221008a789c0f780d22d4cac63afbde6820baa96042aff20a8f1b5f2efa783a255a94022100e04e9269cb9228ff4e559c1e692d1397a0e7c423fe7c805ac01fda66b77719d3",
- "url": "bin/madoka-xiao_esp32c3-1.14.0.bin",
+ "version": "1.14.1",
+ "size": 1664496,
+ "sha256": "2699545fcdade4ceb967fd1e9019092531a537589a5bfa02aafeb7620c2d0795",
+ "sig": "3044022004fb2dfe712d45a19b1c991a9217329609eec768afb7c4bde1a32bc8c9da1ef602202c3b370dae4ce5ac4f498931cfbe491ffcfe079e2a35502e96685358f030ddce",
+ "url": "bin/madoka-xiao_esp32c3-1.14.1.bin",
  "rollout": 100,
- "notes": "New name: CoolfinchAC. The app moves to coolfinchac.pages.dev.",
- "notes_sig": "30460221008500c835cda4bd0d0713650dce23a16872a7e1505939c8a05de5004d9e4b69a80221009b6cfce67f455357292a9e276b4f68a0f2b9882744bda1b7f266fafe5aa68aaa"
+ "notes": "Clearer layout and wording, Contact support in Info, and appearance fixes.",
+ "notes_sig": "3044022039c212daee6573b46f007aa3eb1e2fd961bcf47e30f29cdb5765995046aec2cf022032262568de3b2ef1dcc161fb4dd8782667d3f41cbc2d8e84178004eed89c1c3c"
 }

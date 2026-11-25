@@ -1,11 +1,11 @@
 {
  "fw_id": "supermini_esp32c3",
- "version": "1.14.0",
- "size": 1669920,
- "sha256": "122539c3682fd23e7eeeee5d290de575410c762c7d29b355d58f00a507af4ebf",
- "sig": "304402204a48016b839cddd2209494f661eef71d09ef95b03e228c9e1646b685891dead8022000bd575f54a89dce8925bcc9fcce1ca0c6b8e6f2606de9b81de77074ef5559a3",
- "url": "bin/madoka-supermini_esp32c3-1.14.0.bin",
+ "version": "1.14.1",
+ "size": 1674400,
+ "sha256": "bccc95023f2472f3838e9897d26d616fa07b7718bda2cb588ad73269413a37ef",
+ "sig": "30440220231b86f916c59ccc6a5dc76c7963827bc3936108276f504b5dbff5808889604b02206963291912e79ece653ad2f7957f61281effbcd01fd310070897675bff9a597e",
+ "url": "bin/madoka-supermini_esp32c3-1.14.1.bin",
  "rollout": 100,
- "notes": "New name: CoolfinchAC. The app moves to coolfinchac.pages.dev.",
- "notes_sig": "30450221009c9303b1a62a3feebb41f982980760b97ecae2055ddaf69643ec6fee238c7b260220057597b401d3ea40c23890933383aba61836ebd46daff59c9c2429e2d0b173e3"
+ "notes": "Clearer layout and wording, Contact support in Info, and appearance fixes.",
+ "notes_sig": "30450221009a1b4e79577839743604c2872b1bfcab36534762ef105d5249864fdc74adc055022039a941da57b41ea6ceeebdcaafcd33e355ded686ec30cad79b286a3305326e8a"
 }
