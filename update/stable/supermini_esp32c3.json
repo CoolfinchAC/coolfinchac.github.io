@@ -1,11 +1,11 @@
 {
  "fw_id": "supermini_esp32c3",
- "version": "1.14.2",
- "size": 1688400,
- "sha256": "b6b961e765a48c65df3651837587ce6e11e6120215068c12cdab9d69bead32c8",
- "sig": "3046022100b897ad38949a460b29cb5148ec9b00f80124c30c4a0534fb100202f887b02529022100bd3bf36137c17568bf3147b08d8070e006c3bfe9775b8290848e2dbe2cf2e046",
- "url": "bin/madoka-supermini_esp32c3-1.14.2.bin",
+ "version": "1.14.3",
+ "size": 1689168,
+ "sha256": "d8cf70d980ad05fb795d0df595dbbd48a420763aa176ded5c693737c55278226",
+ "sig": "304402202d1d87acb5e8aa14e17bba5bf49ed0021884b586d73f858e6d7b60a1d5b050eb0220377509b21ca5a60ab9d0cb9abf35195e606ecf3c8671f68dfa1d0dc5841d65ac",
+ "url": "bin/madoka-supermini_esp32c3-1.14.3.bin",
  "rollout": 100,
- "notes": "Second owner from the app, Wi-Fi and wall controller settings from the app, time zone always set, and clearer messages.",
- "notes_sig": "304502205cca8e2a91557a1a0cbb630098c74abdb73f8001e04d58d1063202676b884f67022100c0b46a15a8841a1e98e182b574ea4dfc2605db46c2cf64a1993e218d7e91e71e"
+ "notes": "Time zone stays put while you travel, and security fixes.",
+ "notes_sig": "3044022060d2454a7d96cf3df51cf2bb8f2f57457593d951a55404d32f3dd8d54e01b97c02205503b077f2e07be70330fef4ec901d052843e423c1c49db80a547b36f2c10fb9"
 }
