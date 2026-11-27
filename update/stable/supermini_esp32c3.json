@@ -1,11 +1,11 @@
 {
  "fw_id": "supermini_esp32c3",
- "version": "1.14.1",
- "size": 1674400,
- "sha256": "bccc95023f2472f3838e9897d26d616fa07b7718bda2cb588ad73269413a37ef",
- "sig": "30440220231b86f916c59ccc6a5dc76c7963827bc3936108276f504b5dbff5808889604b02206963291912e79ece653ad2f7957f61281effbcd01fd310070897675bff9a597e",
- "url": "bin/madoka-supermini_esp32c3-1.14.1.bin",
+ "version": "1.14.2",
+ "size": 1688400,
+ "sha256": "b6b961e765a48c65df3651837587ce6e11e6120215068c12cdab9d69bead32c8",
+ "sig": "3046022100b897ad38949a460b29cb5148ec9b00f80124c30c4a0534fb100202f887b02529022100bd3bf36137c17568bf3147b08d8070e006c3bfe9775b8290848e2dbe2cf2e046",
+ "url": "bin/madoka-supermini_esp32c3-1.14.2.bin",
  "rollout": 100,
- "notes": "Clearer layout and wording, Contact support in Info, and appearance fixes.",
- "notes_sig": "30450221009a1b4e79577839743604c2872b1bfcab36534762ef105d5249864fdc74adc055022039a941da57b41ea6ceeebdcaafcd33e355ded686ec30cad79b286a3305326e8a"
+ "notes": "Second owner from the app, Wi-Fi and wall controller settings from the app, time zone always set, and clearer messages.",
+ "notes_sig": "304502205cca8e2a91557a1a0cbb630098c74abdb73f8001e04d58d1063202676b884f67022100c0b46a15a8841a1e98e182b574ea4dfc2605db46c2cf64a1993e218d7e91e71e"
 }

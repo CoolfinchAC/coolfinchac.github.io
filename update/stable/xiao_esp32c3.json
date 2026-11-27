@@ -1,11 +1,11 @@
 {
  "fw_id": "xiao_esp32c3",
- "version": "1.14.1",
- "size": 1664496,
- "sha256": "2699545fcdade4ceb967fd1e9019092531a537589a5bfa02aafeb7620c2d0795",
- "sig": "3044022004fb2dfe712d45a19b1c991a9217329609eec768afb7c4bde1a32bc8c9da1ef602202c3b370dae4ce5ac4f498931cfbe491ffcfe079e2a35502e96685358f030ddce",
- "url": "bin/madoka-xiao_esp32c3-1.14.1.bin",
+ "version": "1.14.2",
+ "size": 1678464,
+ "sha256": "4b23457b32ce23fe584a48b34bdb3e3223d9c3050aa162a462dada31d1e6dd3f",
+ "sig": "3044022073c2e24e47d63621e4f66a1a389d0321d4106d2d0f9e6cf965348a580bb191580220514b931baa7ba57b0ebfba4d95d568ce7b41f6172a923ec29694a20f43c82b15",
+ "url": "bin/madoka-xiao_esp32c3-1.14.2.bin",
  "rollout": 100,
- "notes": "Clearer layout and wording, Contact support in Info, and appearance fixes.",
- "notes_sig": "3044022039c212daee6573b46f007aa3eb1e2fd961bcf47e30f29cdb5765995046aec2cf022032262568de3b2ef1dcc161fb4dd8782667d3f41cbc2d8e84178004eed89c1c3c"
+ "notes": "Second owner from the app, Wi-Fi and wall controller settings from the app, time zone always set, and clearer messages.",
+ "notes_sig": "3045022100852388be7e350ff0281ead395f1b0c332c5df9647f21a0a0e3a424468e108450022055c813d692b9f786b944d1cdb52c295b61d23868950b6086f3ba7e5ef38bb817"
 }
