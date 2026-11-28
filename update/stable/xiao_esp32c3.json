@@ -1,11 +1,11 @@
 {
  "fw_id": "xiao_esp32c3",
- "version": "1.14.5",
- "size": 1690240,
- "sha256": "4d9956eb49295d0b8c0e275145b3b7f35145ebb6e3629d46c2c1895c93c5e594",
- "sig": "30460221009f552b2de3f8712eb5bb5e57f1bf24f578399c50cb6d9eb9bfdbd25b17bd7658022100e61a9564596a8a672b48c1ee74f036cf00d6edd3b89b5f1422f4c2cf0879deaa",
- "url": "bin/madoka-xiao_esp32c3-1.14.5.bin",
+ "version": "1.14.6",
+ "size": 1691200,
+ "sha256": "8982dfa88b012643bd483d001c454b6b4087295556426a8ceb074eaefa3c6aa4",
+ "sig": "3045022070d7e43c2cc9bc37a099518b0d28444d8eb368939546443ed8578fc224ffb053022100fdf7015ae2c4f8bb9bad057a8e89d5abefd94a2e97fe4cbe8aa3635533de80ec",
+ "url": "bin/madoka-xiao_esp32c3-1.14.6.bin",
  "rollout": 100,
- "notes": "The tab bar stays in place after using another app, and far fewer 'too many requests' messages.",
- "notes_sig": "3045022001ac2dd3a8e1d582870440938529189bbad6b1a5b74c5c4556d1227af3f74eb20221009901ceb0987f0eaf7d70488b05a80cb6f78314fa5083d2749c398193e96f341f"
+ "notes": "The app now adapts to landscape phones, tablets and desktop browsers.",
+ "notes_sig": "3046022100e4f4c03c687553b4c40c4e636d64648066f026cfba0705b0cd98f580aa19247d022100f5da01c52a9a354a7b559ca8d7b1ca496e8600f08e83df6a80544c37ab4b885f"
 }

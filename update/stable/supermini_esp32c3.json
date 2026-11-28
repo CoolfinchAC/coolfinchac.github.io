@@ -1,11 +1,11 @@
 {
  "fw_id": "supermini_esp32c3",
- "version": "1.14.5",
- "size": 1700128,
- "sha256": "4a038bc1ea33211e628f8e5c716a93a8042801c500c90b1d4971b1b8e259f070",
- "sig": "304602210089f8ec345365ba12388c321bf1c39cea13f63eed448bd80fb3243e494b573900022100f7123a539eb7854fc45f3a86b3770cc522f8b24ab4d928d8c2898485bf86f42f",
- "url": "bin/madoka-supermini_esp32c3-1.14.5.bin",
+ "version": "1.14.6",
+ "size": 1701088,
+ "sha256": "15ec2de4e55976aae4f98c0a9d3fc0fd5f09fd315c693c9fa686530a22e22e83",
+ "sig": "3046022100d15aa96a92aad51f6eede81bf511d8cbeff39c29bcc396d7871c809de8b3c8f8022100921f043110e4708588400e5cc83af912b6252694d61776771267e2423326b77c",
+ "url": "bin/madoka-supermini_esp32c3-1.14.6.bin",
  "rollout": 100,
- "notes": "The tab bar stays in place after using another app, and far fewer 'too many requests' messages.",
- "notes_sig": "3046022100d7556f9973f23e24bc8d82ddfbf52240bf5bc2e8808d629ebe4d95a6526690af022100cb5b744a9fb5f366fa3a9db06c36a43501def9b40b4b99ca4360718b63119317"
+ "notes": "The app now adapts to landscape phones, tablets and desktop browsers.",
+ "notes_sig": "3046022100e62717ae8b45715052a5c7300fe44c8f3fc15d37a6eb99d96683551ef077de8e022100d50a6b480b8cfe747ae2da4d2c07e93ce913d720834cba055f93361d26f55755"
 }
