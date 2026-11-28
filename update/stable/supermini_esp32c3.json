@@ -1,11 +1,11 @@
 {
  "fw_id": "supermini_esp32c3",
- "version": "1.14.3",
- "size": 1689168,
- "sha256": "d8cf70d980ad05fb795d0df595dbbd48a420763aa176ded5c693737c55278226",
- "sig": "304402202d1d87acb5e8aa14e17bba5bf49ed0021884b586d73f858e6d7b60a1d5b050eb0220377509b21ca5a60ab9d0cb9abf35195e606ecf3c8671f68dfa1d0dc5841d65ac",
- "url": "bin/madoka-supermini_esp32c3-1.14.3.bin",
+ "version": "1.14.4",
+ "size": 1698016,
+ "sha256": "8fb605b7b8f3ce5f578294d6c982cbaeb1e07054e1db6f1e9c6bc001c1b3393e",
+ "sig": "304502206bcff90392eab9e4060557a0738293ae583250c1fc067dd34534957af51893a70221008a9e845dd9b295227ad076ea730194693fe6f729ea30dee30c07ff325d5a6789",
+ "url": "bin/madoka-supermini_esp32c3-1.14.4.bin",
  "rollout": 100,
- "notes": "Time zone stays put while you travel, and security fixes.",
- "notes_sig": "3044022060d2454a7d96cf3df51cf2bb8f2f57457593d951a55404d32f3dd8d54e01b97c02205503b077f2e07be70330fef4ec901d052843e423c1c49db80a547b36f2c10fb9"
+ "notes": "Security improvements, a new fleet dashboard, and a more reliable release tool.",
+ "notes_sig": "3045022100c3cb0339f98069ca7954bd08f637037a2ecbf3ff562768f1cb893ac2ab54930d02203e83ebf77b5b3c16ab6f3cc0fc9fc3c8c3750fad285759bdd54859027482057b"
 }

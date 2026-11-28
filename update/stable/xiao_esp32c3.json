@@ -1,11 +1,11 @@
 {
  "fw_id": "xiao_esp32c3",
- "version": "1.14.3",
- "size": 1679216,
- "sha256": "271ea8623d2c9643e60cedf3f307d4b0eb19b47e62607566e08a9ba58e52553e",
- "sig": "30450220340c86c15bb5f0a9f47be01a5e28db534259cb3580c879649c0c849afe4f6dfe022100864319c19571db21c191625532c1713dbc166c0ec3e7ddd80714b8da310543b7",
- "url": "bin/madoka-xiao_esp32c3-1.14.3.bin",
+ "version": "1.14.4",
+ "size": 1688112,
+ "sha256": "b66eea5c77961c7911e8549130bbf8fd4d096fa2acacfa5416ef5025ab3dbd0b",
+ "sig": "3045022100e044277599923be3e9cb3eb2514fbc22b98cf02bafc1deab4ee3d2f5ed1ea52b02206eb8522477d64c7f755084fa81391906875a4445bac9dc4fec5ed3ebbcdb4911",
+ "url": "bin/madoka-xiao_esp32c3-1.14.4.bin",
  "rollout": 100,
- "notes": "Time zone stays put while you travel, and security fixes.",
- "notes_sig": "304402207bbb44b242e3cc12f98920a3497a070da622dc466d2208253f629ba28af374bd02200cf26ee7a53655f5f633b0f6de0ad19631d61da2f2cb061cda1797d726a3f5d4"
+ "notes": "Security improvements, a new fleet dashboard, and a more reliable release tool.",
+ "notes_sig": "3046022100c2be99c75d7cab894c08531576529799e37282cc8df63d2c50e9c1a0bb2135d4022100f3ff6e3fa0dc8bd4dc311d4bebadf3bafc25a68657e85da812976ad77702c656"
 }
