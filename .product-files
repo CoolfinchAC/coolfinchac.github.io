@@ -1,0 +1,10 @@
+# Files of the product page, written by tools/publish_product.py (it removes only files listed here).
+# update/ and .nojekyll belong to tools/release.py.
+404.html
+assets/icon.svg
+assets/site.css
+index.html
+privacy/index.html
+robots.txt
+sitemap.xml
+support/index.html

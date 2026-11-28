@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'self'; img-src 'self'; base-uri 'none'; form-action 'none'">
+<meta name="referrer" content="no-referrer">
+<meta name="color-scheme" content="light dark">
+<title>CoolfinchAC: control your Daikin air conditioner from your phone</title>
+<meta name="description" content="A small relay that plugs in next to your Daikin BRC1H (Madoka) wall controller. Control the air conditioner from your phone, at home and away. No account, no subscription.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="CoolfinchAC">
+<meta property="og:description" content="Control your Daikin air conditioner from your phone, at home and away. Works with the BRC1H (Madoka) wall controller. No account, no subscription.">
+<meta property="og:url" content="https://coolfinchac.github.io/">
+<link rel="icon" href="assets/icon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/site.css">
+<!-- Source of the public product page (https://coolfinchac.github.io/). Edit here, then publish with
+     tools/publish_product.py. {{...}} placeholders are filled by that tool (README, "Product page"). No scripts. -->
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="top">
+<div class="wrap">
+<a class="brand" href="#top" aria-label="CoolfinchAC, back to the top">
+<svg viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="14" class="f-acc"/><path d="M14 40c4-12 14-19 26-17l6-6 2 9c2 3 2 7 0 10-4 8-15 11-26 8l-8 6z" class="f-on"/><circle cx="43" cy="27" r="2.2" class="f-acc"/></svg>
+CoolfinchAC</a>
+<nav aria-label="Sections">
+<a href="#how">How it works</a><a href="#features">Features</a><a href="#privacy">Privacy</a><a href="#compat">Compatibility</a><a href="#faq">FAQ</a>
+</nav>
+<a class="cta" href="#contact">Join the pilot</a>
+</div>
+</header>
+
+<main id="main">
+<section class="hero" id="top">
+<div class="wrap grid">
+<div>
+<h1>Your air conditioner, from your phone.</h1>
+<p class="lead">CoolfinchAC is a small relay that sits next to your Daikin BRC1H (Madoka) wall controller. Control the air conditioner at home on Wi-Fi and from anywhere through the internet. The wall controller keeps working as before.</p>
+<div class="btns">
+<a class="btn pri" href="#contact">Join the pilot</a>
+<a class="btn" href="#how">How it works</a>
+</div>
+<ul class="chips" aria-label="In short">
+<li>No account</li><li>No subscription</li><li>End-to-end encrypted</li><li>iPhone and Android</li>
+</ul>
+</div>
+<svg class="ill" viewBox="0 0 400 300" role="img" aria-labelledby="heroT">
+<title id="heroT">The CoolfinchAC relay, plugged into a wall socket, talks to the wall controller over Bluetooth; a phone shows the same temperature.</title>
+<rect x="6" y="6" width="388" height="288" rx="28" class="f-fill"/>
+<!-- wall controller -->
+<rect x="44" y="52" width="128" height="128" rx="20" class="f-card s-ln" stroke-width="1.5"/>
+<rect x="60" y="68" width="96" height="62" rx="9" class="f-scr"/>
+<text x="108" y="109" font-size="32" font-weight="600" text-anchor="middle" class="f-scrtx">24°</text>
+<text x="108" y="124" font-size="9" letter-spacing="1.5" text-anchor="middle" class="f-scrtx">COOL</text>
+<circle cx="80" cy="154" r="8" class="f-fill"/><circle cx="108" cy="154" r="8" class="f-fill"/><circle cx="136" cy="154" r="8" class="f-fill"/>
+<text x="108" y="204" font-size="13" text-anchor="middle" class="f-sub">wall controller</text>
+<!-- socket, USB adapter, relay -->
+<rect x="196" y="178" width="76" height="76" rx="14" class="f-card s-ln" stroke-width="1.5"/>
+<rect x="210" y="192" width="48" height="48" rx="9" class="f-bg s-sub" stroke-width="1.5"/>
+<rect x="228" y="232" width="12" height="6" rx="1.5" class="f-sub"/>
+<path d="M234 238 C234 268 262 270 290 262" fill="none" class="s-sub" stroke-width="3" stroke-linecap="round"/>
+<rect x="288" y="240" width="64" height="38" rx="10" class="f-card s-acc" stroke-width="2"/>
+<path d="M301 266c2-6 6-9 12-8l3-3 1 4c1 1.5 1 3.5 0 5-2 4-7 5-12 4l-4 3z" class="f-acc"/>
+<text x="334" y="264" font-size="10" font-weight="600" text-anchor="middle" class="f-acc">relay</text>
+<!-- Bluetooth between relay and controller -->
+<path d="M318 238 C312 170 250 128 178 116" fill="none" class="s-acc dot" stroke-width="3.5"/>
+<circle cx="268" cy="150" r="15" class="f-acc"/>
+<path d="M263 144.5l10 10-5 5v-19l5 5-10 10" fill="none" class="s-card" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<!-- phone -->
+<rect x="296" y="24" width="72" height="132" rx="15" class="f-tx"/>
+<rect x="300" y="28" width="64" height="124" rx="12" class="f-bg"/>
+<rect x="306" y="44" width="52" height="54" rx="10" class="f-card"/>
+<text x="332" y="78" font-size="22" font-weight="600" text-anchor="middle" class="f-tx">24°</text>
+<text x="332" y="91" font-size="7" text-anchor="middle" class="f-sub">Room 26°</text>
+<circle cx="332" cy="120" r="12" class="f-acc"/>
+<path d="M332 113v6M327 116a7 7 0 1 0 10 0" fill="none" class="s-card" stroke-width="2" stroke-linecap="round"/>
+<path d="M276 64a26 26 0 0 1 0 36M268 72a14 14 0 0 1 0 20" fill="none" class="s-acc" stroke-width="3" stroke-linecap="round"/>
+</svg>
+</div>
+</section>
+
+<section id="how">
+<div class="wrap">
+<h2>How it works</h2>
+<p class="kicker">Set up in a few minutes with your phone. No app store, no account: the CoolfinchAC app is a web app you add to your Home Screen.</p>
+<div class="how">
+<ol class="steps">
+<li class="card"><h3>Plug it in next to the wall controller</h3><p class="muted">In a wall socket in the same room, within about 3 metres of the controller, with the USB power adapter from the box.</p></li>
+<li class="card"><h3>Scan the two codes on the card</h3><p class="muted">Code 1 joins the relay's own Wi-Fi, code 2 opens setup. Type your home Wi-Fi password, then confirm the same number on your phone and on the wall controller to pair them.</p></li>
+<li class="card"><h3>Open the app</h3><p class="muted">Tap <b>Open the app</b> and add it to your Home Screen. It works on your home Wi-Fi and anywhere with internet. Add the other phones in your home with a QR code.</p></li>
+</ol>
+<div class="card diagram">
+<svg class="ill" viewBox="0 0 360 290" role="img" aria-labelledby="howT">
+<title id="howT">At home the phone reaches the relay over Wi-Fi; away from home through an encrypted message service. The relay talks to the wall controller over Bluetooth, and the wall controller to the air conditioner over its wire as today.</title>
+<!-- links -->
+<path d="M62 64H110" class="s-acc" stroke-width="3" fill="none"/>
+<path d="M200 64H268" class="s-acc dot" stroke-width="3.5" fill="none"/>
+<path d="M304 98V176" class="s-sub" stroke-width="3" fill="none"/>
+<path d="M62 214H118" class="s-sub dash" stroke-width="2.5" fill="none"/>
+<path d="M155 186V86" class="s-sub dash" stroke-width="2.5" fill="none"/>
+<text x="86" y="54" font-size="11" text-anchor="middle" class="f-sub">Wi-Fi</text>
+<text x="234" y="54" font-size="11" text-anchor="middle" class="f-sub">Bluetooth</text>
+<text x="312" y="134" font-size="11" class="f-sub">wire,</text><text x="312" y="147" font-size="11" class="f-sub">as today</text>
+<text x="90" y="206" font-size="11" text-anchor="middle" class="f-sub">internet</text>
+<text x="164" y="130" font-size="11" class="f-sub">encrypted</text><text x="164" y="143" font-size="11" class="f-sub">end to end</text>
+<!-- phone at home -->
+<rect x="22" y="30" width="38" height="68" rx="8" class="f-tx"/><rect x="25" y="33" width="32" height="62" rx="6" class="f-bg"/>
+<circle cx="41" cy="74" r="7" class="f-acc"/><rect x="31" y="44" width="20" height="16" rx="3" class="f-fill"/>
+<text x="41" y="116" font-size="12" font-weight="600" text-anchor="middle" class="f-tx">Phone</text>
+<text x="41" y="130" font-size="11" text-anchor="middle" class="f-sub">at home</text>
+<!-- relay -->
+<rect x="112" y="44" width="86" height="40" rx="10" class="f-card s-acc" stroke-width="2"/>
+<text x="155" y="68" font-size="11" font-weight="600" text-anchor="middle" class="f-acc">CoolfinchAC</text>
+<text x="155" y="30" font-size="12" font-weight="600" text-anchor="middle" class="f-tx">Relay</text>
+<!-- wall controller -->
+<rect x="272" y="34" width="64" height="62" rx="12" class="f-card s-ln" stroke-width="1.5"/>
+<rect x="280" y="42" width="48" height="30" rx="5" class="f-scr"/>
+<text x="304" y="63" font-size="16" font-weight="600" text-anchor="middle" class="f-scrtx">24°</text>
+<circle cx="292" cy="84" r="4" class="f-fill"/><circle cx="304" cy="84" r="4" class="f-fill"/><circle cx="316" cy="84" r="4" class="f-fill"/>
+<text x="304" y="24" font-size="12" font-weight="600" text-anchor="middle" class="f-tx">Wall controller</text>
+<!-- AC indoor unit -->
+<rect x="252" y="178" width="100" height="40" rx="10" class="f-card s-ln" stroke-width="1.5"/>
+<path d="M262 206H342M262 212H342" class="s-ln" stroke-width="2"/>
+<circle cx="340" cy="190" r="2.5" class="f-ok"/>
+<path d="M274 228c4 6 0 10 4 16M302 228c4 6 0 10 4 16M330 228c4 6 0 10 4 16" fill="none" class="s-acc" stroke-width="2" stroke-linecap="round"/>
+<text x="302" y="266" font-size="12" font-weight="600" text-anchor="middle" class="f-tx">Air conditioner</text>
+<!-- phone away -->
+<rect x="22" y="180" width="38" height="68" rx="8" class="f-tx"/><rect x="25" y="183" width="32" height="62" rx="6" class="f-bg"/>
+<circle cx="41" cy="224" r="7" class="f-acc"/><rect x="31" y="194" width="20" height="16" rx="3" class="f-fill"/>
+<text x="41" y="266" font-size="12" font-weight="600" text-anchor="middle" class="f-tx">Phone</text>
+<text x="41" y="280" font-size="11" text-anchor="middle" class="f-sub">away</text>
+<!-- cloud -->
+<path d="M131 236h50a16 16 0 0 0 0-32 22 22 0 0 0-42-6 18 18 0 0 0-8 38z" class="f-card s-sub" stroke-width="2"/>
+<rect x="148" y="214" width="14" height="11" rx="2" class="f-sub"/><path d="M150.5 214v-3a4.5 4.5 0 0 1 9 0v3" fill="none" class="s-sub" stroke-width="2"/>
+<text x="155" y="256" font-size="12" font-weight="600" text-anchor="middle" class="f-tx">Cloud</text>
+<text x="155" y="270" font-size="11" text-anchor="middle" class="f-sub">can't read it</text>
+</svg>
+</div>
+</div>
+</div>
+</section>
+
+<section id="features">
+<div class="wrap">
+<h2>Everything the wall controller does, and more</h2>
+<p class="kicker">Power, mode, temperature and fan from your phone, plus the things a wall controller can't do.</p>
+<div class="feat">
+<svg class="ill phone" viewBox="0 0 220 440" role="img" aria-labelledby="phoneT">
+<title id="phoneT">The CoolfinchAC app on a phone: the room's set temperature, mode buttons, a power button and the tabs Home, Schedules, Info and Settings.</title>
+<rect x="4" y="4" width="212" height="432" rx="36" class="f-tx"/>
+<rect x="12" y="12" width="196" height="416" rx="29" class="f-bg"/>
+<rect x="80" y="20" width="60" height="16" rx="8" class="f-tx"/>
+<text x="28" y="72" font-size="21" font-weight="700" class="f-tx">Living room</text>
+<text x="28" y="90" font-size="11" class="f-sub">Cooling · room 26°</text>
+<rect x="24" y="104" width="172" height="150" rx="18" class="f-card"/>
+<circle cx="110" cy="170" r="48" fill="none" class="s-ln" stroke-width="8"/>
+<path d="M76 204a48 48 0 1 1 74 -6" fill="none" class="s-acc" stroke-width="8" stroke-linecap="round"/>
+<text x="110" y="180" font-size="32" font-weight="600" text-anchor="middle" class="f-tx">24°</text>
+<circle cx="46" cy="232" r="13" class="f-fill"/><path d="M40 232h12" class="s-acc" stroke-width="2.5" stroke-linecap="round"/>
+<circle cx="174" cy="232" r="13" class="f-fill"/><path d="M168 232h12M174 226v12" class="s-acc" stroke-width="2.5" stroke-linecap="round"/>
+<rect x="24" y="266" width="172" height="36" rx="10" class="f-fill"/>
+<rect x="27" y="269" width="42" height="30" rx="8" class="f-card"/>
+<text x="48" y="288" font-size="10" font-weight="600" text-anchor="middle" class="f-acc">Cool</text>
+<text x="90" y="288" font-size="10" text-anchor="middle" class="f-sub">Heat</text>
+<text x="128" y="288" font-size="10" text-anchor="middle" class="f-sub">Dry</text>
+<text x="168" y="288" font-size="10" text-anchor="middle" class="f-sub">Fan</text>
+<rect x="24" y="312" width="172" height="44" rx="12" class="f-acc"/>
+<path d="M80 326v8M74 329a9 9 0 1 0 12 0" fill="none" class="s-card" stroke-width="2" stroke-linecap="round"/>
+<text x="122" y="338" font-size="12" font-weight="600" text-anchor="middle" class="f-on">Turn off</text>
+<rect x="12" y="378" width="196" height="50" class="f-card"/>
+<path d="M12 378H208" class="s-ln" stroke-width="1"/>
+<circle cx="40" cy="396" r="5" class="f-acc"/><circle cx="87" cy="396" r="5" class="f-sub"/><circle cx="133" cy="396" r="5" class="f-sub"/><circle cx="180" cy="396" r="5" class="f-sub"/>
+<text x="40" y="414" font-size="8" text-anchor="middle" class="f-acc">Home</text>
+<text x="87" y="414" font-size="8" text-anchor="middle" class="f-sub">Schedules</text>
+<text x="133" y="414" font-size="8" text-anchor="middle" class="f-sub">Info</text>
+<text x="180" y="414" font-size="8" text-anchor="middle" class="f-sub">Settings</text>
+</svg>
+<div class="cards">
+<div class="card"><svg viewBox="0 0 28 28" aria-hidden="true"><circle cx="14" cy="14" r="14" class="f-acc"/><path d="M8 15a8 8 0 0 1 12 0M10.5 18a4.5 4.5 0 0 1 7 0" fill="none" class="s-card" stroke-width="2" stroke-linecap="round"/><circle cx="14" cy="21" r="1.5" class="f-on"/></svg>
+<h3>At home and away</h3><p>On your home Wi-Fi and from anywhere with internet, with the same app. No VPN, no router settings.</p></div>
+<div class="card"><svg viewBox="0 0 28 28" aria-hidden="true"><circle cx="14" cy="14" r="14" class="f-acc"/><rect x="8" y="8" width="12" height="12" rx="3" fill="none" class="s-card" stroke-width="2"/><path d="M11 14h6" class="s-card" stroke-width="2"/></svg>
+<h3>The wall controller stays</h3><p>It works exactly as before. Changes made on the wall show up in the app.</p></div>
+<div class="card"><svg viewBox="0 0 28 28" aria-hidden="true"><circle cx="14" cy="14" r="14" class="f-acc"/><circle cx="14" cy="14" r="7" fill="none" class="s-card" stroke-width="2"/><path d="M14 10v4l3 2" fill="none" class="s-card" stroke-width="2" stroke-linecap="round"/></svg>
+<h3>Schedules, timers, presets</h3><p>They run on the relay itself, so they work with your phone switched off. Save favourite settings as presets.</p></div>
+<div class="card"><svg viewBox="0 0 28 28" aria-hidden="true"><circle cx="14" cy="14" r="14" class="f-acc"/><path d="M9 20V9l10 5.5z" fill="none" class="s-card" stroke-width="2" stroke-linejoin="round"/></svg>
+<h3>Away mode</h3><p>Going on holiday? Pause the schedules until you're back, with one switch.</p></div>
+<div class="card"><svg viewBox="0 0 28 28" aria-hidden="true"><circle cx="14" cy="14" r="14" class="f-acc"/><path d="M8 19h12M10 16v-3M14 16V9M18 16v-5" fill="none" class="s-card" stroke-width="2" stroke-linecap="round"/></svg>
+<h3>7-day history</h3><p>Room temperature, how long the AC ran each hour and day, and an estimate of the electricity cost.</p></div>
+<div class="card"><svg viewBox="0 0 28 28" aria-hidden="true"><circle cx="14" cy="14" r="14" class="f-acc"/><path d="M9 18h10l-1.5-2v-4a3.5 3.5 0 0 0-7 0v4zM12.5 20.5h3" fill="none" class="s-card" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+<h3>Notifications</h3><p>When the AC can't be reached (and when it's back), when the filter needs cleaning, and when the relay was updated.</p></div>
+<div class="card"><svg viewBox="0 0 28 28" aria-hidden="true"><circle cx="14" cy="14" r="14" class="f-acc"/><path d="M8 14l6-5 6 5M10 13v7h8v-7" fill="none" class="s-card" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+<h3>Arriving and leaving</h3><p>Automation links for iPhone Shortcuts or an Android automation app: turn the AC off when you leave, on when you head home.</p></div>
+<div class="card"><svg viewBox="0 0 28 28" aria-hidden="true"><circle cx="14" cy="14" r="14" class="f-acc"/><circle cx="11" cy="11.5" r="2.5" fill="none" class="s-card" stroke-width="2"/><circle cx="17.5" cy="12.5" r="2" fill="none" class="s-card" stroke-width="2"/><path d="M6.5 19.5a4.5 4.5 0 0 1 9 0M15 19.5a3 3 0 0 1 6 0" fill="none" class="s-card" stroke-width="2" stroke-linecap="round"/></svg>
+<h3>Household and guests</h3><p>Add the family's phones with a QR code. Guests get access until a date you choose, within the temperatures and modes you allow. Remove any phone at once.</p></div>
+<div class="card"><svg viewBox="0 0 28 28" aria-hidden="true"><circle cx="14" cy="14" r="14" class="f-acc"/><rect x="9" y="13" width="10" height="8" rx="2" fill="none" class="s-card" stroke-width="2"/><path d="M11 13v-2a3 3 0 0 1 6 0v2" fill="none" class="s-card" stroke-width="2"/></svg>
+<h3>Owner PIN</h3><p>Optional: a PIN, checked by the relay, before anyone can add phones, change guests or install updates.</p></div>
+<div class="card"><svg viewBox="0 0 28 28" aria-hidden="true"><circle cx="14" cy="14" r="14" class="f-acc"/><path d="M19 12a5.5 5.5 0 1 0 .5 4M19.5 8v4h-4" fill="none" class="s-card" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+<h3>Updates by themselves</h3><p>Digitally signed, installed at night, and undone automatically if a new version doesn't work properly.</p></div>
+<div class="card"><svg viewBox="0 0 28 28" aria-hidden="true"><circle cx="14" cy="14" r="14" class="f-acc"/><path d="M9 14.5l3.5 3.5L19.5 10" fill="none" class="s-card" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+<h3>No account, no subscription</h3><p>One price, once. Nothing to sign up for and no app store: a web app on your Home Screen.</p></div>
+</div>
+</div>
+</div>
+</section>
+
+<section id="privacy">
+<div class="wrap">
+<h2>Privacy and security</h2>
+<p class="kicker">Your home's data stays in your home. Here is what that means, in plain words.</p>
+<div class="two">
+<div class="card">
+<ul class="ticks">
+<li><b>No accounts, no advertising, no analytics, no cookies.</b> The app keeps its key in your phone's own storage.</li>
+<li><b>Your data stays on the relay:</b> schedules, the 7-day history, the phones you added. We can't see it. A factory reset erases it.</li>
+<li><b>Control from away is encrypted end to end.</b> A message service (EMQX Cloud, in the EU) passes the messages but can't read them or send commands.</li>
+<li><b>Only the phones you add</b> can control the AC, each with its own key. Unused invitation codes expire after 15 minutes.</li>
+</ul>
+</div>
+<div class="card">
+<ul class="ticks">
+<li><b>Signed updates:</b> the relay installs only software signed by us, made for it, and never an older version.</li>
+<li><b>What we do see:</b> the message service sees which relay and phone talk and when, and their internet addresses. The app's files come from Cloudflare, which sees your phone's address like any website.</li>
+<li><b>A small health report</b> every 15 minutes (software version, Wi-Fi signal, memory, restarts) helps us spot problems. No temperatures, no schedules, no names.</li>
+</ul>
+<p class="muted">Details: <a href="privacy/">privacy notice</a>. Found a security problem? <a href="support/#found-a-security-problem">Tell us</a>.</p>
+</div>
+</div>
+</div>
+</section>
+
+<section id="compat">
+<div class="wrap">
+<h2>Compatibility and requirements</h2>
+<p class="kicker">Check these before you order.</p>
+<div class="two">
+<div class="card">
+<h3>Your air conditioner</h3>
+<ul class="ticks">
+<li>Works with <b>Daikin BRC1H (Madoka) wall controllers</b> (they connect over Bluetooth).</li>
+<li>One wall controller per relay. Other controllers and other brands are not supported.</li>
+<li>A wall socket within about 3 metres of the controller, where your Wi-Fi reaches.</li>
+</ul>
+</div>
+<div class="card">
+<h3>Your home and phone</h3>
+<ul class="ticks">
+<li><b>2.4 GHz home Wi-Fi</b> with internet (almost every router has it).</li>
+<li><b>iPhone</b> with Safari. Notifications need iOS 16.4 or later and the app opened from the Home Screen.</li>
+<li><b>Android</b> phone with Chrome.</li>
+<li>Daikin's own Madoka app still works: release Bluetooth for 10 minutes from CoolfinchAC when you need it.</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+
+<section id="faq">
+<div class="wrap">
+<h2>Questions</h2>
+<p class="kicker">If yours isn't here, <a href="#contact">write to us</a>.</p>
+<details><summary>Does it replace the wall controller?</summary>
+<div><p>No. The relay pairs with your wall controller over Bluetooth, like Daikin's app does. The controller stays on the wall and works exactly as before; whatever you change there shows up in the app, and the other way round. Nothing in the air conditioner is rewired or modified.</p></div></details>
+<details><summary>What if the internet is down?</summary>
+<div><p>At home, the app offers <b>Open the home Wi-Fi page</b>, which controls the AC directly through your home Wi-Fi. Schedules and timers run on the relay and keep running. After a power cut the relay needs the internet once to set its clock before schedules run again. Control from away comes back by itself when the internet does.</p></div></details>
+<details><summary>What if CoolfinchAC stops one day?</summary>
+<div><p>Your relay keeps working at home: control on your home Wi-Fi and the schedules run on the relay and don't depend on our servers. We promise free security updates for at least 3 years from purchase, and before we ever switch off control from away, we tell you at least 3 months in advance and explain how to keep using it (the relay can also use your own message server). See the <a href="support/">support promise</a>.</p></div></details>
+<details><summary>Do I need an account or a subscription?</summary>
+<div><p>No. You pay once. There is no account to create, no password to remember, and nothing to install from an app store. Your phone gets its own key when you set up or when a family member adds you with a QR code.</p></div></details>
+<details><summary>Who can control my air conditioner?</summary>
+<div><p>Only the phones you add. Each phone has its own key, and you can remove any phone at once (for example a lost one). Guests get limited access until a date you choose. Commands from away are encrypted end to end, so neither the message service nor we can read them or send commands.</p></div></details>
+<details><summary>Can I still use Daikin's Madoka app?</summary>
+<div><p>Yes. The wall controller talks to one app at a time, so CoolfinchAC can release Bluetooth for 10 minutes (Settings → Use Daikin's Madoka app). It reconnects by itself afterwards.</p></div></details>
+<details><summary>I got a new router or changed the Wi-Fi password. Now what?</summary>
+<div><p>Unplug and plug in the relay three times in a row. It opens its own Wi-Fi for 10 minutes; scan the two codes on the card again and choose the new network. Nothing is erased: schedules, phones and history stay.</p></div></details>
+<details><summary>How much does it cost, and where can I buy it?</summary>
+<div><p>$150, a one-time price with no subscription. Not in shops yet: write to us at CoolfinchAC@gmail.com to join the pilot.</p></div></details>
+</div>
+</section>
+
+<section id="contact">
+<div class="wrap">
+<div class="card contact">
+<h2>Join the pilot</h2>
+<p class="kicker">CoolfinchAC is starting with a small group of homes. Have a Daikin air conditioner with a BRC1H (Madoka) wall controller? Write to us, and tell us where you live and which phone you use.</p>
+<div class="btns">
+<a class="btn pri" href="mailto:CoolfinchAC@gmail.com?subject=CoolfinchAC%20pilot&amp;body=Hello%2C%0A%0AI%27d%20like%20to%20join%20the%20CoolfinchAC%20pilot.%0A%0AWall%20controller%3A%20Daikin%20BRC1H%20(Madoka)%0ACountry%2C%20city%3A%20%0APhone%3A%20iPhone%20%2F%20Android%0A">Write to us</a>
+<a class="btn" href="support/">Support</a>
+</div>
+<p class="muted">CoolfinchAC@gmail.com · Already have a relay? <a href="https://coolfinchac.pages.dev">Open the app</a></p>
+</div>
+</div>
+</section>
+</main>
+
+<footer>
+<div class="wrap">
+<nav aria-label="Legal and support">
+<a href="privacy/">Privacy notice</a><a href="support/">Support promise</a><a href="support/#found-a-security-problem">Report a security problem</a><a href="mailto:CoolfinchAC@gmail.com">CoolfinchAC@gmail.com</a>
+</nav>
+<p class="disclaimer">CoolfinchAC is not made by, endorsed by or affiliated with Daikin. Daikin and Madoka are trademarks of Daikin Industries, Ltd., used here only to describe compatibility.</p>
+<p>© CoolfinchAC, contact: CoolfinchAC@gmail.com</p>
+</div>
+</footer>
+</body>
+</html>

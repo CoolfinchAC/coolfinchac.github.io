@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'self'; img-src 'self'; base-uri 'none'; form-action 'none'">
+<meta name="referrer" content="no-referrer">
+<meta name="color-scheme" content="light dark">
+<title>CoolfinchAC privacy notice</title>
+<link rel="icon" href="../assets/icon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="../assets/site.css">
+<!-- Template for the pages made from docs/pilot/privacy-notice.md by tools/publish_product.py: edit the .md, not the published page. -->
+</head>
+<body>
+<header class="top">
+<div class="wrap">
+<a class="brand" href="../">
+<svg viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="14" class="f-acc"/><path d="M14 40c4-12 14-19 26-17l6-6 2 9c2 3 2 7 0 10-4 8-15 11-26 8l-8 6z" class="f-on"/><circle cx="43" cy="27" r="2.2" class="f-acc"/></svg>
+CoolfinchAC</a>
+<a class="cta" href="../#contact">Contact</a>
+</div>
+</header>
+<main class="wrap">
+<article class="doc">
+<h1>CoolfinchAC privacy notice</h1>
+<p class="date"><em>Effective 1 January 2027</em></p>
+<p>CoolfinchAC is a small relay that lets your phones control your Daikin air conditioner. It has <strong>no accounts, no advertising, no analytics and no cookies</strong>. Most of what it knows stays on the relay in your home. This notice explains what data exists, where it is, and what you can do about it.</p>
+<h2 id="who-is-responsible">Who is responsible</h2>
+<p>CoolfinchAC, contact: CoolfinchAC@gmail.com ("we") is the controller for the data described under "What passes through the internet" and "What we keep". Contact: CoolfinchAC@gmail.com.</p>
+<h2 id="what-stays-on-the-relay-in-your-home">What stays on the relay in your home</h2>
+<p>The relay stores, in its own memory:</p>
+<ul>
+<li>your home Wi-Fi name and password, and the Bluetooth pairing with your wall controller;</li>
+<li>the phones you added: the name each phone has in the app (for example "Owner", "Phone 2" or a guest name you typed), its role, its secret key, and a guest's limits and end date;</li>
+<li>your schedules, timers, presets, away mode, time zone, temperature unit and the optional owner PIN (stored only as a scrambled code, never as the PIN itself);</li>
+<li><strong>7 days of history</strong> (about 9-10 days before the oldest is overwritten): room temperature, set temperature, mode, how long the AC was on, the reading of a room sensor if you added one, and the relay's own health;</li>
+<li>the electricity price and AC power you may enter for the cost estimate;</li>
+<li>a list of the <strong>last 30 commands</strong> (which phone did what, and when), kept only until the relay restarts;</li>
+<li>if you turn on notifications: the address your phone's notification service gave for this phone;</li>
+<li>technical logs and, after a crash, a crash report.</li>
+</ul>
+<p>We cannot see any of this. It stays until you remove it in the app or do a <strong>factory reset</strong>, which erases all of it (only what belongs to the device itself stays: its setup password printed on the card and its own login to the message service).</p>
+<p>On your phone, the app keeps its own key for your relay and the relay's address in your home network, in the browser's storage for the app (not a cookie). "Forget this phone" in the app, or removing the app, deletes it.</p>
+<h2 id="what-passes-through-the-internet">What passes through the internet</h2>
+<p><strong>Control away from home: EMQX Cloud (EU).</strong> When you use the app, your phone and the relay exchange messages through a message service run by EMQ Technologies for us, hosted in the EU. Every command, every reply and the AC's state are <strong>encrypted end to end</strong> with your phone's key: EMQX and we cannot read them or send commands. What the service does see: the relay's ID, a random-looking code for each phone (not its name), when and how often they talk, whether the relay is online, and the internet (IP) addresses of the relay and the phones.</p>
+<p><strong>The app: Cloudflare Pages.</strong> The app's files are served by Cloudflare. When your phone loads the app, Cloudflare sees its IP address and browser type, as any website does. Your phone's key is never sent to Cloudflare (it stays in the part of the web address that browsers keep to themselves). The relay also asks the same site about every 6 hours whether a software update is available.</p>
+<p><strong>Notifications (only if you turn them on).</strong> The relay sends notifications through your phone's own notification service: Apple (iPhone), Google (Android, Chrome), Mozilla (Firefox) or Microsoft (Edge on Windows). Each message is encrypted for your phone, so the service sees only its size and time. These companies may process data outside the EU under their own terms.</p>
+<p><strong>Clock.</strong> The relay sets its clock from public time servers (pool.ntp.org, Google, Cloudflare), which see its IP address.</p>
+<p><strong>Health report for us.</strong> To keep the product working and to spot a bad update early, each relay sends us a small health report every 15 minutes: software version, board type, time since start, reason for the last restart, Wi-Fi signal strength, free memory, whether it is connected to the wall controller, failed status checks, whether Bluetooth is lent to Daikin's app, whether a crash was recorded or an update was undone, and how many phones it has. It contains <strong>no AC state or temperatures, no schedules, no names, no Wi-Fi name and no addresses</strong>. Only the latest report is kept; each new one replaces it.</p>
+<p><strong>Support.</strong> If you write to us, we use what you send (for example your e-mail address and the relay's ID) to help you.</p>
+<h2 id="what-we-keep">What we keep</h2>
+<ul>
+<li>For each relay we sell: its ID, the date, the buyer's name and contact details, and notes from support, so we can give support, warranty and security updates. Kept for 3 years after purchase, or longer where accounting law requires it.</li>
+<li>The latest health report of each relay (see above), as long as the relay is in use.</li>
+<li>Support e-mails: as long as needed to solve the problem, then deleted (at most 2 years).</li>
+</ul>
+<p>We do not sell data, do not use it for advertising, and do not build profiles.</p>
+<h2 id="why-we-may-use-it-legal-basis">Why we may use it (legal basis)</h2>
+<ul>
+<li>Selling, supporting and updating your relay: our contract with you (GDPR Art. 6(1)(b)).</li>
+<li>Health reports and keeping the service secure: our legitimate interest in a working, safe product (Art. 6(1)(f)).</li>
+<li>Invoices and records: legal obligations (Art. 6(1)(c)).</li>
+</ul>
+<h2 id="who-helps-us-processors">Who helps us (processors)</h2>
+<ul>
+<li><strong>EMQ Technologies</strong> (EMQX Cloud, EU region): message service for control away from home and health reports.</li>
+<li><strong>Cloudflare, Inc.</strong>: hosts the app and the update files. Cloudflare is a US company; transfers outside the EU are covered by the EU-US Data Privacy Framework and standard contractual clauses.</li>
+</ul>
+<p>Push notification services (Apple, Google, Mozilla, Microsoft) are chosen by your phone, not by us, and work under their own privacy terms.</p>
+<h2 id="your-rights">Your rights</h2>
+<p>You can ask us for a copy of the data we hold about you, have it corrected or deleted, restrict or object to its use, or receive it in a common format. Write to CoolfinchAC@gmail.com. You can also complain to your data protection authority. Most data never reaches us: you control it in the app, and a factory reset erases it from the relay.</p>
+<h2 id="changes">Changes</h2>
+<p>If this notice changes, we publish the new version at coolfinchac.github.io with a new date.</p>
+</article>
+</main>
+<footer>
+<div class="wrap">
+<nav aria-label="Legal and support">
+<a href="../">Home</a><a href="../privacy/">Privacy notice</a><a href="../support/">Support promise</a><a href="mailto:CoolfinchAC@gmail.com">CoolfinchAC@gmail.com</a>
+</nav>
+<p class="disclaimer">CoolfinchAC is not made by, endorsed by or affiliated with Daikin. Daikin and Madoka are trademarks of Daikin Industries, Ltd., used here only to describe compatibility.</p>
+<p>© CoolfinchAC, contact: CoolfinchAC@gmail.com</p>
+</div>
+</footer>
+</body>
+</html>
